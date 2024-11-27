@@ -1,0 +1,19 @@
+﻿<Window x:Class="FirstWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWpfApp"
+        xmlns:vb="clr-namespace:FirstWpfApp.Data"
+        xmlns:raj="clr-namespace:DbDemo;assembly=DbDemo"
+        mc:Ignorable="d" 
+        Title="MainWindow" Height="450" Width="800">
+   
+    <Grid x:Name="grid1">
+        <Button x:Name="btn" Content="Click Me" HorizontalAlignment="Left" Margin="584,307,0,0" VerticalAlignment="Top" Height="50" Width="89" Click="btn_Click"/>
+        <Label x:Name="lblAns" Content="" HorizontalAlignment="Left" Margin="541,0,0,0" VerticalAlignment="Center" Height="33" Width="234"/>
+        <TextBox x:Name="txtNum1" HorizontalAlignment="Left" Margin="584,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="26"/>
+        <TextBox x:Name="txtNum2" HorizontalAlignment="Left" Margin="584,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Height="26"/>
+        <raj:UserControl1/>
+    </Grid>
+</Window>

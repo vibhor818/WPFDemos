@@ -1,0 +1,46 @@
+﻿<Window x:Class="MenuExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu Example" Height="400" Width="600">
+    <DockPanel>
+        <!-- Main Menu -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" Command="ApplicationCommands.New" InputGestureText="Ctrl+N" />
+                <MenuItem Header="_Open" Command="ApplicationCommands.Open" InputGestureText="Ctrl+O" />
+                <MenuItem Header="_Save" Command="ApplicationCommands.Save" InputGestureText="Ctrl+S" />
+                <Separator />
+                <MenuItem Header="E_xit" Click="ExitMenuItem_Click" InputGestureText="Alt+F4" />
+            </MenuItem>
+
+            <MenuItem Header="_Edit">
+                <MenuItem Header="_Cut" Command="ApplicationCommands.Cut" />
+                <MenuItem Header="_Copy" Command="ApplicationCommands.Copy" />
+                <MenuItem Header="_Paste" Command="ApplicationCommands.Paste" />
+                <Separator />
+                <MenuItem Header="Select _All" Command="ApplicationCommands.SelectAll" />
+            </MenuItem>
+
+            <MenuItem Header="_Options">
+                <MenuItem Header="Enable Feature" IsCheckable="True" Click="EnableFeatureMenuItem_Click" />
+                <MenuItem Header="Disable Me" IsEnabled="False" />
+            </MenuItem>
+
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" Click="AboutMenuItem_Click" />
+            </MenuItem>
+        </Menu>
+
+        <!-- Context Menu -->
+        <TextBox Name="MainTextBox" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="10">
+            <TextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="_Cut" Command="ApplicationCommands.Cut" />
+                    <MenuItem Header="_Copy" Command="ApplicationCommands.Copy" />
+                    <MenuItem Header="_Paste" Command="ApplicationCommands.Paste" />
+                </ContextMenu>
+            </TextBox.ContextMenu>
+        </TextBox>
+    </DockPanel>
+</Window>
+

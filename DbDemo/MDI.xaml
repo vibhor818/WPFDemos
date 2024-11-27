@@ -1,0 +1,19 @@
+﻿<Window x:Class="DbDemo.MDI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MDI Parent Window" Height="450" Width="800">
+    <Grid>
+        <!-- Menu for creating child windows -->
+        <Menu VerticalAlignment="Top" Height="44">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New Child Window" Click="NewChildWindow_Click"/>
+                <MenuItem Header="_Exit" Click="Exit_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Container for child windows -->
+        
+        <Canvas x:Name="mdiCanvas" Background="LightGray" Margin="0,44,0,0"/>
+    </Grid>
+</Window>
+

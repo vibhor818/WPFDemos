@@ -1,0 +1,35 @@
+﻿<Window x:Class="DbDemo.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DbDemo"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid x:Name="grid1">
+        <Grid x:Name="myGrid" Margin="81,55,497,258">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="1" Grid.Column="2" Content="Button" HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.707,-1.212"/>
+            <ComboBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="71" Height="13"/>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Width="200" Margin="460,38,140,295">
+            <Button Content="Button"/>
+            <Button Content="Button"/>
+            <Button Content="Button"/>
+        </StackPanel>
+        <Rectangle  HorizontalAlignment="Left" Height="86" Margin="456,179,0,0" Stroke="Black" VerticalAlignment="Top" Width="225" Fill="{Binding Text, ElementName=txtColor}">
+            
+        </Rectangle>
+        <TextBox x:Name="txtColor" HorizontalAlignment="Left" Margin="460,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Height="26"/>
+        <Ellipse Fill="{Binding Text, ElementName=txtColor}" HorizontalAlignment="Left" Height="100" Margin="328,152,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Polygon Points="0,0,50,50,100,0" Stroke="Purple" StrokeThickness="2" Fill="Transparent"></Polygon>
+    </Grid>
+</Window>

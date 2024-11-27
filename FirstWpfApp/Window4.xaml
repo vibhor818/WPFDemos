@@ -1,0 +1,24 @@
+﻿<Window x:Class="FirstWpfApp.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWpfApp"
+        mc:Ignorable="d"
+        Title="Window4" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="36,49,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="17" Width="58"/>
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Margin="123,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" Height="34"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,102,0,0" TextWrapping="Wrap" Text="Age" VerticalAlignment="Top" Height="17" Width="58"/>
+        <TextBox x:Name="AgeTextBox" HorizontalAlignment="Left" Margin="123,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" Height="34"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,141,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Height="17" Width="58"/>
+        <TextBox x:Name="AddrssTextBox" HorizontalAlignment="Left" Margin="123,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="129" Height="34"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,183,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Height="17" Width="58"/>
+        <RadioButton x:Name="MaleRadioButton" Content="Male" HorizontalAlignment="Left" Margin="123,183,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="FemaleRadioButton" Content="Female" HorizontalAlignment="Left" Margin="226,185,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="SaveToDbCheckBox" Content="Save to Database" HorizontalAlignment="Left" Margin="36,0,0,0" VerticalAlignment="Center"/>
+        <TextBlock x:Name="OutputTextBlock" HorizontalAlignment="Left" Margin="36,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="164" Width="573"/>
+        <Button x:Name="btnAdd" Content="Add Tto Cache" HorizontalAlignment="Left" Margin="202,200,0,0" VerticalAlignment="Top" Height="42" Width="98" Click="btnAdd_Click"/>
+
+    </Grid>
+</Window>

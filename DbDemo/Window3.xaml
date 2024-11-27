@@ -1,0 +1,22 @@
+﻿<Window x:Class="DbDemo.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DbDemo"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid Margin="10" x:Name="grid1">
+        <DockPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,10">
+                <Button Content="Open File" Width="100" Margin="5" Click="Button_Click"></Button>
+                <Button Content="Save File" Width="100" Margin="5" Click="ButtonSave_Click"></Button>
+                <Button Content="Open Custom Dialog" Width="130" Margin="5" Click="OpenCustomDialog_Click"></Button>
+                
+            </StackPanel>
+            <RichTextBox x:Name="vbRtb" VerticalScrollBarVisibility="Auto"></RichTextBox>
+        </DockPanel>
+        
+
+    </Grid>
+</Window>

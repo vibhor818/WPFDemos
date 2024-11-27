@@ -1,0 +1,35 @@
+﻿<Window x:Class="FirstWpfApp.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWpfApp"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btn" Content="Button" HorizontalAlignment="Left" Margin="86,67,0,0" VerticalAlignment="Top" Height="35" Width="91" Click="btnCallTest">
+            <Button.ToolTip>
+                This is testing button control.
+            </Button.ToolTip>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="339,67,0,0" VerticalAlignment="Top" Height="35" Width="78">
+            <Button.ToolTip>
+                <ToolTip Background="LightGreen" Foreground="DarkBlue" BorderBrush="Red">
+                    <TextBlock Text="This is designed tooltip"></TextBlock>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="550,67,0,0" VerticalAlignment="Top" Height="35" Width="87" ToolTipOpening="Button_ToolTipOpening" Click="Button_Click">
+            
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="107,217,0,0" VerticalAlignment="Top" Height="40" Width="98">
+            <Button.ToolTip>
+                <ToolTip Placement="Mouse" >
+                    <TextBlock Opacity="0.5" Text="This is again tooltip"></TextBlock>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+
+
+    </Grid>
+</Window>
